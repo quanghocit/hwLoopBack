@@ -1,0 +1,9 @@
+<section>
+  <article ng-repeat="p in people.slice().reverse()">
+    <p>{{p.firstname}} | {{p.lastname}}</p>
+    <div class="actions">
+      <button ui-sref="edit-person({ id: p.id })" class="btn btn-danger">Edit</button>
+      <button a ui-sref="delete-person({ id: p.id })" class="btn btn-warning">Delete</button>
+    </div>
+  </article>
+</section>

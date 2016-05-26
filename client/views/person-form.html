@@ -1,0 +1,22 @@
+<section>
+  <form name="form" ng-submit="submitForm()">
+    <fieldset>
+      <legend>{{action}} person form</legend>
+
+      <div class="form-group">
+        <label>Firstname</label>
+        <input name="email" type="text" ng-model="person.firstname">
+      </div>
+
+      <div class="form-group">
+        <label>Lastname</label>
+        <input name="password" type="text" ng-model="person.lastname">
+      </div>
+
+      <div class="actions">
+        <label></label>
+        <button>{{action}} Person</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
